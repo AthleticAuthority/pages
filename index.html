@@ -7,8 +7,11 @@
 	
 	<!-- Latest compiled and minified BOOTSTRAP CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body class="body">
 <!-- Body content starts -->
 	<h1 class="header">
 		Athletic Authority
@@ -16,21 +19,26 @@
 
 	<div class="container-fluid">
 		<div class="row row1">
-			<div class="col col-sm-12 col-md-8 col-lg-8 copy-lead">
-				<h3>FREE ebook shows you powerful NEW technique to turn your body into a fat burning machine</h3>
+			<div class="col col-sm-12 col-md-6 col-lg-6 copy-lead">
+				<h3 class="copy-lead-text">FREE ebook shows you powerful NEW technique to turn your body into a fat burning machine</h3>
 			</div>
 
-			<div class="col col-sm-12 col-md-4 col-lg-4 image-and-quote">
-				<img src="/img/smilinguser.jpeg">
+			<div class="col col-sm-12 col-md-6 col-lg-6 image-and-quote">
+				<img class="user-image" src="img/smilinguser.jpeg">
 				<span class="quote">
-					"These strategies helped me lose more than 30 pounds of yucky stubborn fat in only 8 weeks"
+					"These strategies helped me lose more than 30 pounds of stubborn belly fat in only 8 weeks"
 				</span>
 			</div>
 		</div>
 
 		<div class="row cta">
-			<input type="email" name="email">
-			<button class="btn btn-success">Download Now</button>
+			<form class="form-inline">
+				<div class="form-group">
+					<label class="sr-only" for="exampleInputEmail3">Email address</label>
+					<input type="email" name="email" placeholder="Your best email" id="email"/>
+					<button class="btn btn-success">Download Now</button>
+				</div>
+			</form>
 		</div>
 	</div>
 
